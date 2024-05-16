@@ -8,14 +8,14 @@ pub struct WeatherResponse {
 }
 
 #[derive(Deserialize, Debug)]
-struct Main {
+pub struct Main {
     pub temp: f64,
     pub pressure: u32,
     pub humidity: u32,
 }
 
 #[derive(Deserialize, Debug)]
-struct Weather {
+pub struct Weather {
     pub description: String,
 }
 
